@@ -1,0 +1,114 @@
+*{
+    margin: 0 ;
+    padding:0 ;
+    box-sizing: border-box ;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100% ;
+    width: 100% ;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    padding: 0 3vw;
+    position: relative
+}
+nav{
+    height: 90px;
+    width: 100%;
+    background-color:greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    right: 0;
+    padding: 0 2vw;
+}
+nav img{
+    width: 4vw;
+    height: 4vw;
+}
+#part2 a{
+    text-decoration: none;
+    color: black;
+
+}
+#part2{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#home p{
+    margin-top: 2vw;
+    font-family: Verdana, sans-serif;
+    color: rgb(46, 85, 85);
+}
+#home p span{
+    font: 800;
+    color: rgb(255, 60, 0);
+    font-size: 2vw;
+}
+#gooey{
+    height: 25vw;
+    width: 20vw;
+    background-color: orangered;
+    mix-blend-mode: hard-light;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: -2;
+    text-align: right;
+    margin-left: 5vw;
+    filter: blur(10px);
+
+    animation-name: anime1;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes anime1{
+    from{
+        transform: skew(10deg,0deg);
+    }
+    to{
+        transform: skew(20deg,30deg);
+    }
+}
+#section{
+    padding: 0 3vw;
+}
+#about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-part2 p,#contact-part2 p{
+    font-size: 17px;
+    margin-top: 2vw;
+    font-family: Verdana, sans-serif;
+}
+#contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact h2 ,#about-part2 h1 {
+    font-size: 5vw;
+}
