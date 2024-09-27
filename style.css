@@ -112,3 +112,38 @@ nav img{
 #contact h2 ,#about-part2 h1 {
     font-size: 5vw;
 }
+@media (max-width: 600px) {
+    nav img{
+        width: 13vw;
+        height: 13vw;
+    }
+    #part2{
+        gap: 6vw;
+    }
+    #home, #about,#contact{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 3vh;
+    }
+    #home img{
+        margin-top: 7vh;
+        height: 55%;
+        margin-bottom: 0;
+    }
+    #home p span{
+        font-size: 7vw;
+    }
+    #about img{
+        margin-top: 7vh;
+        height: 55%;
+        margin-bottom: 0;
+    }
+    #contact img{
+        margin-top: 7vh;
+        height: 55%;
+        margin-bottom: 0;
+    }
+    #gooey{
+        top: 74%;
+    }
+}
